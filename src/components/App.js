@@ -5,7 +5,7 @@ import Header from "./Header";
 import About from "./About";
 import ArticleList from "./ArticleList";
 
-console.log(blogData);
+// console.log(blogData);
 
 function App() {
   return (
@@ -18,10 +18,11 @@ function App() {
       About = {blogData.about}
 
       />
+      
       <ArticleList
-      title={blogData.posts[0].title}
-      date={blogData.posts[0].date}
-      preview={blogData.posts[0].preview}
+      
+      
+      posts={blogData.posts}
       
       />
     </div>
